@@ -1,3 +1,10 @@
+:root {
+    --noodles: sandybrown;
+    --sauce: seashell;
+    --cheese:palegoldenrod;
+    --spice: rebeccapurple;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -7,15 +14,14 @@
 }
 
 body {
-    color:sandybrown;
-    background-color:seashell;
+    color:var(--noodles);
+    background-color:var(--sauce);
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 header h1 {
     height: 30px;
-    padding: 60px;
-    background-color: seashell;
+    padding: 50px;
 
 }
 
@@ -32,14 +38,14 @@ nav {
    
     display: inline-block;
     font-size: larger;
-    background-color: seashell;
+    background-color: var(--sauce);
     width: 100%;
 
 }
 
 nav a {
     text-decoration: none;
-    color: sandybrown;
+    color: var(--noodles);
     padding: 15px 20px;
    
 }
@@ -48,7 +54,6 @@ nav a {
     display: flex;
     flex-wrap: wrap;
     padding: 20px;
-    background-color: seashell;
     flex: 5;
     display: inline-block;
     width: 100%;
@@ -84,14 +89,18 @@ li {
     padding: 7px;
 }
     
-/*TODO how to size project images*/
 .project {
         border-style:double;
         border-width: 6px;
         border-radius: 10px;
-        border-color: seashell;
+        border-color: var(--sauce);
         padding: 15px;
         justify-content: space-between;
+}
+
+.project:hover {
+    box-shadow: 0px 0px 15px var(--spice);
+
 }
 
 .project img {
@@ -103,20 +112,20 @@ li {
     text-decoration: none;
 }
 .project a:hover {
-    color: blue;
+    color: var(--spice);
 }
       
 #About {
-    background-color: palegoldenrod;
+    background-color: var(--cheese);
 }
 
 #Work {
-    background-color: palegoldenrod;
+    background-color: var(--cheese);
 }
 
 #Contact {
     
-    background-color: seashell;
+    background-color: var(--sauce);
 }
 
 ul li {
@@ -130,7 +139,7 @@ ul li a {
 }
 
 ul li a:hover {
-    color:blue;
+    color:var(--spice);
 }
 
 
@@ -143,15 +152,15 @@ footer {
 }
 footer a {
     text-decoration: none;
-    color: sandybrown;
-    font-size: x-small
+    color: var(--noodles);
+    font-size: small
 }
 
-/* TODO: stack nav, projects, contact 
-@media screen and (max-width: 750px) {
-    ul li a,
-    main {
-        flex-direction: column;
+
+@media screen and (max-width: 650px) {
+    .digits {
+        width: 100%
+        
     }
 }
 
