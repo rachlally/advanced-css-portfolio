@@ -1,4 +1,108 @@
 * {
-    color: white;
-    background-color: orange;
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    
 }
+
+body {
+    color:beige;
+    background-color:coral;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header h1 {
+    height: 40px;
+    padding: 80px;
+    background-color: rgb(202, 99, 99);
+
+}
+
+img {
+    display: block;
+    margin: 30px auto;
+    border: 4px;
+    border-radius: 6px;
+    
+}
+
+
+a {
+    text-decoration: none;
+    color: beige;
+    margin: 5px;
+}
+
+h2 {
+    margin-left: 5px;
+}
+
+.bar {
+   
+    display: inline-block;
+    font-size: larger;
+    background-color: rgb(202, 99, 99);
+    width: 100%;
+
+}
+
+p{
+    margin: 5px;
+}
+
+.bar a:hover {
+    color: blue;
+  }
+
+.text-center {
+    text-align: center;
+}
+
+li {
+    padding: 7px;
+}
+
+.subject {
+        width: 100%;
+        display: inline-block;
+       
+       
+    }
+    
+/*
+.nav-box {
+    width: 4px;
+    border: 8px;
+    height: 15px;
+    margin:auto
+}*/
+
+#About {
+    background-color: palegoldenrod;
+}
+
+#Work {
+    background-color: lightskyblue;
+}
+
+#Contact {
+    
+    background-color: seagreen;
+}
+
+ul li {
+ 
+    display: inline-block;
+
+}
+
+
+footer {
+    height: 60px;
+    width: 100%;
+    line-height: 60px;
+    background-color: slateblue;
+    text-align: center;
+}
+
+
