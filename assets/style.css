@@ -3,46 +3,68 @@
     padding: 0;
     box-sizing:border-box;
     
+    
 }
 
 body {
-    color:beige;
-    background-color:coral;
+    color:sandybrown;
+    background-color:seashell;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 header h1 {
-    height: 40px;
-    padding: 80px;
-    background-color: rgb(202, 99, 99);
+    height: 30px;
+    padding: 60px;
+    background-color: seashell;
 
 }
 
+/* TODO adjust image, responsive*/
 img {
     display: block;
-    margin: 30px auto;
-    border: 4px;
+    margin: auto;
+    justify-content: center;
     border-radius: 6px;
     
 }
 
-
-a {
-    text-decoration: none;
-    color: beige;
-    margin: 5px;
-}
-
-h2 {
-    margin-left: 5px;
-}
-
-.bar {
+nav {
    
     display: inline-block;
     font-size: larger;
-    background-color: rgb(202, 99, 99);
+    background-color: seashell;
     width: 100%;
+
+}
+
+nav a {
+    text-decoration: none;
+    color: sandybrown;
+    padding: 15px 20px;
+   
+}
+
+.subject {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    background-color: seashell;
+    flex: 5;
+    display: inline-block;
+    width: 100%;
+  }
+  
+  .justify-center {
+    justify-content: center;
+  }
+
+
+
+.futurework {
+    flex: 5;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
 
 }
 
@@ -50,7 +72,7 @@ p{
     margin: 5px;
 }
 
-.bar a:hover {
+nav a:hover {
     color: blue;
   }
 
@@ -61,33 +83,40 @@ p{
 li {
     padding: 7px;
 }
-
-.subject {
-        width: 100%;
-        display: inline-block;
-       
-       
-    }
     
-/*
-.nav-box {
-    width: 4px;
-    border: 8px;
-    height: 15px;
-    margin:auto
-}*/
+/*TODO how to size project images*/
+.project {
+        border-style:double;
+        border-width: 6px;
+        border-radius: 10px;
+        border-color: seashell;
+        padding: 15px;
+        justify-content: space-between;
+}
 
+.project img {
+    width: 100%;
+}
+
+.project a {
+    height: 5px;
+    text-decoration: none;
+}
+.project a:hover {
+    color: blue;
+}
+      
 #About {
     background-color: palegoldenrod;
 }
 
 #Work {
-    background-color: lightskyblue;
+    background-color: palegoldenrod;
 }
 
 #Contact {
     
-    background-color: seagreen;
+    background-color: seashell;
 }
 
 ul li {
@@ -96,13 +125,34 @@ ul li {
 
 }
 
+ul li a {
+    text-decoration: none;
+}
+
+ul li a:hover {
+    color:blue;
+}
+
 
 footer {
     height: 60px;
     width: 100%;
     line-height: 60px;
-    background-color: slateblue;
+    background-color: rgb(85, 81, 109);
     text-align: center;
+}
+footer a {
+    text-decoration: none;
+    color: sandybrown;
+    font-size: x-small
+}
+
+/* TODO: stack nav, projects, contact 
+@media screen and (max-width: 750px) {
+    ul li a,
+    main {
+        flex-direction: column;
+    }
 }
 
 
