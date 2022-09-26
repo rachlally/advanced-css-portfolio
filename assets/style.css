@@ -25,8 +25,13 @@ header h1 {
 
 }
 
-/* TODO adjust image, responsive*/
-img {
+.subject {
+    margin: 10px;
+    padding: 10px;
+}
+
+
+header img {
     display: block;
     margin: auto;
     justify-content: center;
@@ -50,28 +55,22 @@ nav a {
    
 }
 
-.subject {
+.futurework {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     padding: 20px;
     flex: 5;
-    display: inline-block;
     width: 100%;
   }
+
+.secondary {
+    display: flex;
+    flex-wrap: wrap;
+}
   
   .justify-center {
     justify-content: center;
   }
-
-
-
-.futurework {
-    flex: 5;
-    padding: 20px;
-    display: flex;
-    flex-wrap: wrap;
-
-}
 
 p{
     margin: 5px;
@@ -104,8 +103,10 @@ li {
 }
 
 .project img {
-    width: 100%;
+    width: 150px;
+    height: 150px;
 }
+
 
 .project a {
     height: 5px;
@@ -115,9 +116,15 @@ li {
     color: var(--spice);
 }
       
-#About {
+.About {
     background-color: var(--cheese);
 }
+
+.About p {
+    margin: 15px;
+}
+
+
 
 #Work {
     background-color: var(--cheese);
@@ -125,7 +132,7 @@ li {
 
 #Contact {
     
-    background-color: var(--sauce);
+    background-color: var(--cheese);
 }
 
 ul li {
