@@ -43,6 +43,7 @@ nav a {
 }
 
 .About img {
+    display: flex;
     border-radius: 100%;
     border-style:double;
     margin: auto;
@@ -109,7 +110,7 @@ li {
 
 }
  
-
+/*
 .Work {
     display: flex;
     flex-direction: column;
@@ -118,6 +119,14 @@ li {
     margin: 2%;
     background-color: var(--cheese);
     
+}*/
+
+#work {
+    display: flex;
+    flex-direction: column;
+    border-style: inset;
+    padding: 2%;
+    background-color: var(--cheese);
 }
 
 .title {
@@ -126,9 +135,7 @@ li {
     text-align: center;
 }
 
-
-
-#Contact {
+#contact {
     display: flex;
     flex-wrap:wrap;
     background-color: var(--cheese);
@@ -172,7 +179,7 @@ footer a:hover {
 
 @media screen and (max-width: 786px) {
     .digits,
-    .navbar a {
+    .navbar {
         width: 50%;
         justify-content: center;
         }
@@ -188,5 +195,16 @@ footer a:hover {
     .About img {
         width: 50%;
     }
-  }
+}
+
+@media screen and (max-width: 650px) {
+    .primary,
+    .secondary {
+        flex-direction: column;
+        align-items: left;
+
+        }
+    }
+        
+
   
