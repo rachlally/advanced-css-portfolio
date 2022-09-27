@@ -8,7 +8,6 @@
 * {
     margin: 0;
     box-sizing:border-box;
-    
 }
 
 body {
@@ -29,13 +28,11 @@ nav a {
     color: var(--noodles);
     padding: 15px 20px;
     font-size: larger;
-   
 }
 
 .subject {
     padding: 2%;
- 
-}
+ }
 
 .About {
     display: flex;
@@ -58,8 +55,8 @@ nav a {
 
 .About p {
     padding: 1%;
+    margin: 1%
 }
-
 
 .primary {
     display: flex;
@@ -76,23 +73,15 @@ nav a {
 
 #chicken img {
     width: 100%;
-    height: 100%;
+    height: 80%;
 }
 
 .secondary {
     display: flex;
     flex-wrap: wrap;
-    align-self: center;
+    flex-direction: row;
+    justify-content: center;
 }
-  
-
-p{
-    margin: 5px;
-}
-
-nav a:hover {
-    color: white;
-  }
 
 
 li {
@@ -105,39 +94,39 @@ li {
         border-radius: 10px;
         border-color: var(--sauce);
         padding: 15px;
-        justify-content: space-between;
 }
 
 .project:hover {
-    box-shadow: 0 0 20px fuchsia;
+    box-shadow: inset 0px 0px 8px fuchsia, 0 0 20px fuchsia;
 
 }
 
 .project img {
     width: 150px;
     height: 150px;
+    position: relative;
+    text-align: center;
 
 }
+ 
 
-
-.project a {
-    height: 5px;
-    text-decoration: none;
-
-}
-.project a:hover {
-    color: fuchsia;
-}
-      
-
-#Work {
+.Work {
     display: flex;
     flex-direction: column;
     border-style: inset;
     padding: 2%;
+    margin: 2%;
     background-color: var(--cheese);
     
 }
+
+.title {
+    margin: 0;
+    position: relative;
+    text-align: center;
+}
+
+
 
 #Contact {
     display: flex;
@@ -183,7 +172,7 @@ footer a:hover {
 
 @media screen and (max-width: 786px) {
     .digits,
-    header nav {
+    .navbar a {
         width: 50%;
         justify-content: center;
         }
