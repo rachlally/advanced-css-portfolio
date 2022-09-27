@@ -1,3 +1,4 @@
+/*adding consistent variables to the document*/
 :root {
     --noodles: sandybrown;
     --sauce: seashell;
@@ -15,7 +16,7 @@ body {
     background-color:var(--sauce);
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
-
+/*flexbox used to align name and nav bar*/
 header {
     display: flex;
     background-color: var(--spice);
@@ -34,6 +35,7 @@ nav a {
     padding: 2%;
  }
 
+ /*flexbox to work with alignment*/
 .About {
     display: flex;
     background-color:var(--cheese);
@@ -59,6 +61,7 @@ nav a {
     margin: 1%
 }
 
+/*top row of my work to create different sizing*/
 .primary {
     display: flex;
     align-self: center;
@@ -77,6 +80,7 @@ nav a {
     height: 80%;
 }
 
+/*bottom row of my work to create independent sizing*/
 .secondary {
     display: flex;
     flex-wrap: wrap;
@@ -90,13 +94,14 @@ li {
 }
     
 .project {
-        border-style:double;
-        border-width: 6px;
-        border-radius: 10px;
-        border-color: var(--sauce);
-        padding: 15px;
+    border-style:double;
+    border-width: 6px;
+    border-radius: 10px;
+    border-color: var(--sauce);
+    padding: 15px;
 }
 
+/*added hover to bring attention to links*/
 .project:hover {
     box-shadow: inset 0px 0px 8px fuchsia, 0 0 20px fuchsia;
 
@@ -143,6 +148,7 @@ ul li a {
     text-decoration: none;
 }
 
+/*added hover to bring attention to links*/
 ul li a:hover {
     color: fuchsia;
 }
@@ -161,11 +167,12 @@ footer a {
     font-size: small
 }
 
+/*added hover to bring attention to links*/
 footer a:hover {
     color: fuchsia;
 }
 
-
+/*rezing and reconstructing elements to stack and shrink to fit has page size decreases*/
 @media screen and (max-width: 786px) {
     .digits,
     .navbar {
