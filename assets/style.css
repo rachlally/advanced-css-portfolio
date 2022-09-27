@@ -1,8 +1,8 @@
 /*adding consistent variables to the document*/
 :root {
     --noodles: sandybrown;
-    --sauce: seashell;
-    --cheese:palegoldenrod;
+    --sauce: rgb(202, 164, 106);
+    --cheese:rgb(71, 114, 114);
     --spice: rgb(85, 81, 109);
 }
 
@@ -13,7 +13,7 @@
 
 body {
     color:var(--noodles);
-    background-color:var(--sauce);
+    background: rgb(240, 240, 111);
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 /*flexbox used to align name and nav bar*/
@@ -43,13 +43,13 @@ nav a {
     margin: 2%;
     border-style: inset;
 }
-
+/*flex box for alignment on recent photo, also played around with transitions for movement*/
 .About img {
     display: flex;
     border-radius: 100%;
     border-style:double;
     margin: auto;
-    border-width: 10%;
+    border-width: 20%;
     transition: transform .8s ease-in-out;
     }
 .About img:hover {
@@ -61,7 +61,7 @@ nav a {
     margin: 1%
 }
 
-/*top row of my work to create different sizing*/
+/*top row of "My Work" to create different sizing within flexbox*/
 .primary {
     display: flex;
     align-self: center;
@@ -70,17 +70,13 @@ nav a {
 
 }
 
-#chicken {
-    width: 100%;
-    padding: 2%;
-}
 
 #chicken img {
     width: 100%;
     height: 80%;
 }
 
-/*bottom row of my work to create independent sizing*/
+/*bottom row of "My Work" to create independent sizing and ability to wrap for responsiveness*/
 .secondary {
     display: flex;
     flex-wrap: wrap;
@@ -98,12 +94,11 @@ li {
     border-width: 6px;
     border-radius: 10px;
     border-color: var(--sauce);
-    padding: 15px;
 }
 
 /*added hover to bring attention to links*/
 .project:hover {
-    box-shadow: inset 0px 0px 8px fuchsia, 0 0 20px fuchsia;
+    box-shadow: inset 0px 0px 10px var(--sauce), 0 0 20px var(--sauce);
 
 }
 
