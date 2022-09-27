@@ -110,17 +110,6 @@ li {
 
 }
  
-/*
-.Work {
-    display: flex;
-    flex-direction: column;
-    border-style: inset;
-    padding: 2%;
-    margin: 2%;
-    background-color: var(--cheese);
-    
-}*/
-
 #work {
     display: flex;
     flex-direction: column;
@@ -202,6 +191,7 @@ footer a:hover {
     .secondary {
         flex-direction: column;
         align-items: left;
+        width: 50%;
 
         }
     }
