@@ -2,12 +2,11 @@
     --noodles: sandybrown;
     --sauce: seashell;
     --cheese:palegoldenrod;
-    --spice: rebeccapurple;
+    --spice: rgb(85, 81, 109);
 }
 
 * {
     margin: 0;
-    padding: 0;
     box-sizing:border-box;
     
 }
@@ -18,70 +17,83 @@ body {
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
-header h1 {
-    height: 30px;
-    padding: 50px;
-
-}
-
-.subject {
-    margin: 10px;
-    padding: 10px;
-}
-
-
-header img {
-    display: block;
-    margin: auto;
-    justify-content: center;
-    border-radius: 6px;
-    
-}
-
-nav {
-   
-    display: inline-block;
-    font-size: larger;
-    background-color: var(--sauce);
-    width: 100%;
-
+header {
+    display: flex;
+    background-color: var(--spice);
+    padding: 2%;
+    justify-content: space-between;
 }
 
 nav a {
     text-decoration: none;
     color: var(--noodles);
     padding: 15px 20px;
+    font-size: larger;
    
 }
 
-.futurework {
+.subject {
+    padding: 2%;
+ 
+}
+
+.About {
     display: flex;
-    flex-direction: column;
-    padding: 20px;
-    flex: 5;
+    background-color:var(--cheese);
+    padding: 2%;
+    margin: 2%;
+    border-style: inset;
+}
+
+.About img {
+    border-radius: 100%;
+    border-style:double;
+    margin: auto;
+    border-width: 10%;
+    transition: transform .8s ease-in-out;
+    }
+.About img:hover {
+    transform:rotate(360deg);
+    }
+
+.About p {
+    padding: 1%;
+}
+
+
+.primary {
+    display: flex;
+    align-self: center;
+    padding: inherit;
+    width: 55%;
+
+}
+
+#chicken {
     width: 100%;
-  }
+    padding: 2%;
+}
+
+#chicken img {
+    width: 100%;
+    height: 100%;
+}
 
 .secondary {
     display: flex;
     flex-wrap: wrap;
+    align-self: center;
 }
   
-  .justify-center {
-    justify-content: center;
-  }
 
 p{
     margin: 5px;
 }
 
 nav a:hover {
-    color: blue;
+    color: white;
   }
 
-.text-center {
-    text-align: center;
-}
 
 li {
     padding: 7px;
@@ -97,41 +109,43 @@ li {
 }
 
 .project:hover {
-    box-shadow: 0px 0px 15px var(--spice);
+    box-shadow: 0 0 20px fuchsia;
 
 }
 
 .project img {
     width: 150px;
     height: 150px;
+
 }
 
 
 .project a {
     height: 5px;
     text-decoration: none;
+
 }
 .project a:hover {
-    color: var(--spice);
+    color: fuchsia;
 }
       
-.About {
-    background-color: var(--cheese);
-}
-
-.About p {
-    margin: 15px;
-}
-
-
 
 #Work {
+    display: flex;
+    flex-direction: column;
+    border-style: inset;
+    padding: 2%;
     background-color: var(--cheese);
+    
 }
 
 #Contact {
-    
+    display: flex;
+    flex-wrap:wrap;
     background-color: var(--cheese);
+    padding: 2%;
+    border-style: inset;
+
 }
 
 ul li {
@@ -145,7 +159,7 @@ ul li a {
 }
 
 ul li a:hover {
-    color:var(--spice);
+    color: fuchsia;
 }
 
 
@@ -153,7 +167,7 @@ footer {
     height: 60px;
     width: 100%;
     line-height: 60px;
-    background-color: rgb(85, 81, 109);
+    background-color:var(--spice);
     text-align: center;
 }
 footer a {
@@ -162,12 +176,28 @@ footer a {
     font-size: small
 }
 
-
-@media screen and (max-width: 650px) {
-    .digits {
-        width: 100%
-        
-    }
+footer a:hover {
+    color: fuchsia;
 }
 
 
+@media screen and (max-width: 786px) {
+    .digits,
+    header nav {
+        width: 50%;
+        justify-content: center;
+        }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .About {
+      flex-direction: column;
+    }
+    .About img {
+        width: 50%;
+    }
+  }
+  
